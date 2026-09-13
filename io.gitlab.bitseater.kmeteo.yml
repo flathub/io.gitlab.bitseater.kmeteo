@@ -98,5 +98,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/bitseater/kmeteo.git
-        tag: 0.1.0
-        commit: 3986c7db0182660a6cb56ba3c84325e36e028ff0
+        tag: 0.1.1
+        commit: a6b4ed65a741c4085e4c25272a64817ccfdfb907
