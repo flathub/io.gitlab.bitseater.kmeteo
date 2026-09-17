@@ -1,0 +1,4 @@
+# Use the following command to regenerate Python modules
+# flatpak-pip-generator -r requirements.txt --yaml --runtime=org.kde.Sdk//6.11
+
+requests

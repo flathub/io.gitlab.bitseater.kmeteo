@@ -1,26 +1,26 @@
-# Flatpak para KMeteo
+# Flatpak for KMeteo
 
-Esta carpeta contiene el manifiesto de Flatpak para publicar la aplicación desde un repositorio remoto, como se hace en Flathub.
+This folder contains the Flatpak manifest to publish the application from a remote repository, as is done in Flathub.
 
-## Requisitos
+## Requirements
 
 - flatpak
 - flatpak-builder
-- sistema de runtimes de Flatpak disponible
+- Flatpak runtime system available
 
 ```bash
 flatpak remote-add --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
-## Compilar desde el repositorio remoto
+## Build from remote repository
 
-Desde la raíz del proyecto:
+From the root of the project:
 
 ```bash
 flatpak-builder --user --install --force-clean build-dir com.gitlab.bitseater.kmeteo.yml
 ```
 
-## Ejecutar
+## Run
 
 ```bash
 flatpak run com.gitlab.bitseater.kmeteo
@@ -32,4 +32,4 @@ flatpak run com.gitlab.bitseater.kmeteo
 flatpak-builder --user --install --force-clean build-dir com.gitlab.bitseater.kmeteo.yml
 ```
 
-> El módulo de la app usa `type: git` para que el manifiesto pueda construirse desde el repositorio remoto y prepararse para su envío a Flathub.
+> The app module uses `type: git` so that the manifest can be built from the remote repository and prepared for submission to Flathub.
